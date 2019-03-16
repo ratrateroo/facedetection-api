@@ -50,7 +50,8 @@ const database = {
 //const portnumber = 3000;
 
 app.get('/', (req, res)=>{
-	res.send(database.users);
+	//res.send(database.users);
+	res.send('it is working')
 })
 
 
