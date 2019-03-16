@@ -4,7 +4,7 @@
   "description": "backend for the facedetection project",
   "main": "server.js",
   "scripts": {
-    "start": "server.js"
+    "start": "nodemon server.js"
   },
   "author": "Mr. T.",
   "license": "ISC",
