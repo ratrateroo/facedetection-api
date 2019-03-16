@@ -58,7 +58,7 @@ app.get('/', (req, res)=>{
 
 
 //for POST request for /signin page
-app.post('/signin', (req, res) => signin.handleSignIn(db, bcrypt))
+app.post('/signin', (req, res) => {signin.handleSignIn(db, bcrypt)})
 
 //for POST request for /register page
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
