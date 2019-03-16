@@ -47,7 +47,7 @@ const database = {
 	]
 }
 
-const portnumber = 3000;
+//const portnumber = 3000;
 
 app.get('/', (req, res)=>{
 	res.send(database.users);
@@ -68,8 +68,8 @@ app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) }
 app.put('/image', (req, res) => { image.handleImage(req, res, db)})
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
-app.listen(portnumber, ()=>{
-	console.log('app is running on ' + portnumber);
+app.listen(process.env.PORT || 3000, ()=>{
+	console.log(`app is running on port ${process.env.PORT}`);
 })
 
 
